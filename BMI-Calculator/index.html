@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+</head>
+<body>
+  <p class="js-element"></p>
+   
+  <script>
+    function bmiCalculator (weight,height){
+      const result = weight/(height*height)
+      const number = Math.floor(result);
+      return number;
+    }
+
+    const BMI = document.querySelector('.js-element')
+
+    BMI.innerHTML = bmiCalculator(78,1.7)
+  </script>
+</body>
+</html>
